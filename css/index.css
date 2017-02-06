@@ -27,7 +27,7 @@
 	background-attachment: fixed;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
-	background: url("http://mdbootstrap.com/images/regular/nature/img%20(54).jpg");
+	background: url("../img/red-brick-wall.jpg");
 }
 /*Section with dummy content*/
 #section-2 {
@@ -50,6 +50,9 @@
 	width: 100%;
 
 }
+#bio{
+	padding: 20px;
+}
 #nav{
 	background-color: rgba(255,255,255,.9);
 	width: 100%;
@@ -66,36 +69,62 @@
 #profilepic{
 	width: 100px;
 	height: 100px;
+	float: left;
+	clear: left;
+	overflow: auto;
+	margin: 0px 20px 0px -30px; 
 }
 .thumbnail
 		{
 			width: 30%;
 			height: 30%;
-			background-color: red;
+			background-color: rgba(255,255,255,.9);
 			float: left;
 		}
-		#thumbnail-1
+		#thumbnail-1, #thumbnail-5
 		{
-			margin: 0px 4% 0px 0px;
+			margin:0 auto;
+			float: none;
+			padding: 50px;
+			width: 60%;
+			height: 50%;
+			background-color: rgba(255,255,255,.9);
+			color: #000;
+			font-size: 16px
+
 
 		}
 		#thumbnail-2
 		{
+			margin: 0px 4% 0px 0px;
+
+		}
+		
+		#thumbnail-3
+		{
 			margin: 0px 1% 0px 1%;
 			float: left;
+			text-align: center;
+			color:#000;
+			background-color: #86d1cd;
+			font-family: times;
+			font-size: 40px;
 		}
-		#thumbnail-3
+		#thumbnail-3 p{
+			margin: 20px;
+		}
+		#thumbnail-4
 		{
 			margin: 0px 0px 0px 4%;
 			float: right;
 		}
-		#thumbnail-4
+		#thumbnail-5
 		{
-			margin:0 auto;
-			margin-top:100px;
-			float: none;
-			padding: 50px;
+			padding: 30px;
+			height: 60%;
 		}
+
+		
 .h1-responsive{
 	padding-bottom: 50px;
 }
