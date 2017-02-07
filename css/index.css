@@ -18,6 +18,9 @@
 	padding-right: 50px;
 	z-index: 1;
 }
+#section-1 h1{
+	margin: 0px 50px;
+}
 .parallax-background {	
 	height: 500px;
 	-webkit-background-size: cover;
@@ -27,7 +30,7 @@
 	background-attachment: fixed;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
-	background: url('../img/red-brick-wall.jpg');
+	background: url("../img/red-brick-wall.jpg");
 }
 /*Section with dummy content*/
 #section-2 {
@@ -43,12 +46,6 @@
 	padding-top: 100px;
 	padding-left: 50px;
 	padding-right: 50px;
-}
-#header{
-	height:50px;
-	padding-top:25px;
-	width: 100%;
-
 }
 #bio{
 	padding: 20px;
@@ -90,7 +87,7 @@
 			height: 50%;
 			background-color: rgba(255,255,255,.9);
 			color: #000;
-			font-size: 16px
+			font-size: 1em;
 
 
 		}
@@ -108,7 +105,7 @@
 			color:#000;
 			background-color: #86d1cd;
 			font-family: times;
-			font-size: 40px;
+			font-size: 3em;
 		}
 		#thumbnail-3 p{
 			margin: 20px;
@@ -127,4 +124,21 @@
 		
 .h1-responsive{
 	padding-bottom: 50px;
+}
+@media screen and (max-width:768px){
+	#thumbnail-1, #thumbnail-5
+		{
+			width: 100%;
+			font-size: 1em;
+			padding: 20px;
+		}
+	#thumbnail-3{
+		font-size: 1.2em;
+		padding: 5% 0;
+	}
+		#profilepic{
+			float: none;
+			margin:0 auto;
+		}
+
 }
