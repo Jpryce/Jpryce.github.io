@@ -49,6 +49,8 @@
 }
 #bio{
 	padding: 20px;
+	text-align: center;
+	font-size: 1.1em;
 }
 #nav{
 	background-color: rgba(255,255,255,.9);
@@ -88,28 +90,21 @@
 			height: 50%;
 			background-color: rgba(255,255,255,.9);
 			color: #000;
-			font-size: 1em;
+			font-size: 1.1em;
 
 
 		}
 		#thumbnail-2
 		{
 			margin: 0px 4% 0px 0px;
-
 		}
-		
 		#thumbnail-3
 		{
 			margin: 0px 1% 0px 1%;
 			float: left;
-			text-align: center;
-			color:#000;
-			background-color: #86d1cd;
-			font-family: times;
-			font-size: 3em;
 		}
-		#thumbnail-3 p{
-			margin: 20px;
+		#thumbnail-2:hover, #thumbnail-3:hover, #thumbnail-4:hover {
+			opacity: 0.7;
 		}
 		#thumbnail-4
 		{
@@ -121,11 +116,10 @@
 			padding: 30px;
 			height: 60%;
 		}
-
+		.h1-responsive{
+			padding-bottom: 50px;
+		}
 		
-.h1-responsive{
-	padding-bottom: 50px;
-}
 @media screen and (max-width:768px){
 	#thumbnail-1, #thumbnail-5
 		{
@@ -136,10 +130,14 @@
 	#thumbnail-3{
 		font-size: 1.2em;
 		padding: 5% 0;
-	}
-		#profilepic{
-			float: none;
-			margin:0 auto;
 		}
-
+	#profilepic{
+		float: none;
+		margin:0 auto;
+		}
+	h1{
+		font-size: 1.5em;
+		padding: 0;
+		margin: 0
+	}
 }
