@@ -20,6 +20,9 @@
 }
 #section-1 h1{
 	margin: 0px 50px;
+	padding: 10px;
+	background-color: rgba(0,0,0,.7);
+	border-radius: 5px; 
 }
 .parallax-background {	
 	height: 500px;
@@ -49,7 +52,8 @@
 }
 #bio{
 	padding: 20px;
-	text-align: center;
+	text-align: right;
+	float: right;
 	font-size: 1.1em;
 }
 #nav{
@@ -67,12 +71,12 @@
 	top: 0;
 }
 #profilepic{
-	width: 100px;
-	height: 100px;
+	width: 35%;
 	float: left;
 	clear: left;
 	overflow: auto;
-	margin: 0px 20px 0px -30px; 
+	margin: -25px 35px 0px -35px;
+	border-radius: 5px; 
 }
 .thumbnail
 		{
@@ -91,6 +95,7 @@
 			background-color: rgba(255,255,255,.9);
 			color: #000;
 			font-size: 1.1em;
+			overflow: auto;
 
 
 		}
@@ -127,13 +132,11 @@
 			font-size: 1em;
 			padding: 20px;
 		}
-	#thumbnail-3{
-		font-size: 1.2em;
-		padding: 5% 0;
-		}
 	#profilepic{
-		float: none;
+		display: block;
 		margin:0 auto;
+		width: 100px;
+		height: 100px;
 		}
 	h1{
 		font-size: 1.5em;
