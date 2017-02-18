@@ -91,6 +91,45 @@ $('#img-6').click(function(){
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
 });
+
+var modal = $('#myModal7');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+	 img = $('img-7');
+	 modalImg = $("Tiffany-Bluebox-Email.png");
+	 captionText = $("caption");
+
+$('#img-7').click(function(){
+    $('#myModal7').css("display", "block");
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+});
+
+var modal = $('#myModal8');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+	 img = $('img-8');
+	 modalImg = $("Tiffany-Bluebox-Email.png");
+	 captionText = $("caption");
+
+$('#img-8').click(function(){
+    $('#myModal8').css("display", "block");
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+});
+
+var modal = $('#myModal9');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+	 img = $('img-9');
+	 modalImg = $("Tiffany-Bluebox-Email.png");
+	 captionText = $("caption");
+
+$('#img-9').click(function(){
+    $('#myModal9').css("display", "block");
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+});
 // Get the <span> element that closes the modal
 var span = $(".close");
 
