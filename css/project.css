@@ -36,11 +36,11 @@ body{
 		.thumbnail:hover {
 			opacity: 0.7;
 		}
-		#img-1
+		#img-1, #img-4
 		{
 			margin: 0px 4% 0px 0px;
 		}
-		#img-2
+		#img-2, #img-5
 		{
 			margin: 0px 1% 0px 1%;
 			float: left;
@@ -48,7 +48,7 @@ body{
 			font-family: times;
 			font-size: 3em;
 		}
-		#img-3
+		#img-3, #img-6
 		{
 			margin: 0px 0px 0px 4%;
 			float: right;
