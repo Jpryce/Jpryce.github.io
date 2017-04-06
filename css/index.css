@@ -25,13 +25,6 @@
 }
 .background {	
 	height: 500px;
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
 	background-color: #dd0000;
 }
 	
