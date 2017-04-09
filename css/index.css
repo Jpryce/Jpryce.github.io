@@ -47,32 +47,33 @@ body{
 #bio{
 	padding: 20px;
 	text-align: center;
-	font-size: 1.1em;
+	font-size: 18px;
 	color:#000;
-	text-shadow: none;
 }
 #bio-container
 {
 	margin: auto;
 	margin-left: 400px;
 	background-color: rgba(255,255,255,1);
-	color: #fff;
-	text-shadow: 1px 2px 2px #000;
-	font-size: 1.2em;
 	border-radius: 5px;
 	float: right;
 }
 #section-2 {
 	background: #fff;
 	width: 100%;
-	padding: 0 0 50px 0;
+	clear:both;
+	display: table;
+	content: "";
 }
 #project-container{
-	position: relative;
+	clear:both;
+	content: "";
 	overflow: auto;
+	padding: 0 0 50px 0;
 }
 #project-header{
 	text-align: center;
+	margin:20px;
 }
 .thumbnail
 {
@@ -100,21 +101,20 @@ body{
 }
 #section-3{
 	color: #fff;
-	height: 400px;
 }
 #contact-container
 {
-	margin:0 auto;
+	margin:50px auto;
 	padding: 20px;
 	width: 60%;
 	color: #000;
 	background-color: rgba(255,255,255,1);
-	top: 50%;
-	transform: translateY(-50%);
-	position: relative;
 	text-align: center;
 	float: none;
 	border-radius: 5px;
+}
+#contact-container p{
+	font-size: 18px;
 }
 #contact-container a{
 	text-shadow: none;
@@ -137,14 +137,20 @@ body{
 		width: 100%;
 	}
 	#bio-header{
-/*		font-size: 1.5em;
-*/		padding: 0;
-margin: 0;
-text-shadow: 2px #000;
-}
-#section-2{
-	height:400px;
+		padding: 0;
+		margin: 0;
+		text-shadow: 2px #000;
+	}
+	#section-2{
 	padding: 0 20px;
-}
-
+	}
+	.thumbnail{
+		width: 50%;
+	}
+	#thumbnail-1, #thumbnail-2, #thumbnail-3{
+		display: block;
+		float: none;
+		clear: both;
+		margin: 20px auto;
+	}
 }
