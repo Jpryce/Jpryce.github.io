@@ -69,7 +69,6 @@ body{
 }
 #project-container{
 	position: relative;
-	transform: translateY(50%);
 	overflow: auto;
 }
 #project-header{
