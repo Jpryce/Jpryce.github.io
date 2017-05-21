@@ -1,117 +1,118 @@
-* {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-user-select: none;  /* Chrome all / Safari all */
-	-moz-user-select: none;     /* Firefox all */
-	-ms-user-select: none;      /* IE 10+ */
-	user-select: none;
-	padding: none;
-	margin: none;
+body, html{
+	margin: 0;
+	padding: 0;
+	background-size: cover;
+	width: 100%;
+	min-width: 250px;
+}
+.container-fluid{
+	padding:0;
 }
 body{
-	margin: 0 auto;
-	background: url("../img/RED-brickwall.jpg");
 	background-repeat: no-repeat;
+	background-position: absolute;
+	background-image: url("../img/brick-wall-background.jpg");
+
 }
 #nav{
-	background-color: rgba(255,255,255,.9);
-	width: 100%;
-	height: 66px;
-	margin-bottom: -80px;
-	z-index: 2;
-	position: fixed;
-	padding: 10px;
+	background-color: /*#321011*/ rgba(255,255,255,1);
+	padding: 10px 0px 0px 0px;
+	margin-bottom: 20px;
+	border:none;
 }
-.nav-scrolled{
-	position: fixed;
-	width: 100%;
-	top: 0;
+#nav a{
+	margin: 0 5px;
+	color:#000;
+	font-size: 14px;
+	font-weight: bold;
+	transition: color .5s;
+}
+#nav a:hover{
+	opacity: 1;
+	color:#f00;
 }
 #section-1 {
-	color: #fff;
+	background-color: rgba(255,255,255,1);
+	padding-top: 55px;
+	display: table;
 	width: 100%;
-	padding-top: 100px;
-	padding-left: 50px;
-	padding-right: 50px;
-	z-index: 1;
-	height: 500px;
-	text-align:center;
+	margin: 0;
 }
-#section-1 h1{
-	margin: 0px auto;
-	padding: 10px 10px 23px 10px;
-	background-color: rgba(0,0,0,.0);
-	text-shadow: 2px 2px 2px #000;
-	border-radius: 5px; 
+#title{
+	display: table-cell;
+	float: none;
+	vertical-align: middle;
+}
+#name, #job{
+	text-shadow: 2px 2px 2px #777;
+	color:#000;
+	margin-left: 5px;
+	
+}
+#job-title{
+	line-height: 0px;
 }
 #bio{
-	padding: 20px;
-	text-align: center;
-	font-size: 18px;
-	color:#000;
-}
-#bio-container
-{
-	margin: auto;
-	margin-left: 400px;
-	background-color: rgba(255,255,255,1);
 	border-radius: 5px;
-	float: right;
+	padding: 10px;
+	display: table-cell;
+	float: none;
+	vertical-align: top;
+}
+#bio li{
+	background-color: rgba(255,255,255,0) !important;
+	border: none;
+	color: #000;
+	font-size: 18px;
+	padding: 20px;
+
 }
 #section-2 {
-	background: #fff;
-	width: 100%;
-	clear:both;
-	display: table;
-	content: "";
+	background-image: url("../img/brick-wall-background.jpg");
+	background-attachment: fixed;
+	height: 100%;
+	padding: 20px;
+	margin: 0;
+}
+
+#profilepic{
+	display: table-cell;
+	float: none;
+	vertical-align: middle;
+}
+#profilepic img{
+	width: 150px;
+}
+#projects img{
+	transition: box-shadow 1s, transform 1s;
+	margin: 10px 0;
+}
+#projects img:hover{
+	box-shadow: 10px 10px 10px rgba(255,255,255,.8);
+	transform: scale(1.05);
+
 }
 #project-container{
-	clear:both;
-	content: "";
-	overflow: auto;
-	padding: 0 0 50px 0;
+	padding-bottom: 20px;
 }
 #project-header{
-	text-align: center;
-	margin:20px;
-}
-.thumbnail
-{
-	width: 30%;
-	height: 30%;
-	background-color: rgba(255,255,255,.9);
-	float: left;
-}
-#thumbnail-1
-{
-	margin: 0px 4% 0px 0px;
-}
-#thumbnail-2
-{
-	margin: 0px 1% 0px 1%;
-	float: left;
-}
-#thumbnail-1:hover, #thumbnail-2:hover, #thumbnail-3:hover {
-	opacity: 0.7;
-}
-#thumbnail-3
-{
-	margin: 0px 0px 0px 4%;
-	float: right;
+	color:#fff;
+	margin: 20px;
 }
 #section-3{
-	color: #fff;
+	background-color: #fff;
+	margin: 0;
+}
+#contact-container{
+	border-radius: 5px;
 }
 #contact-container
 {
-	margin:50px auto;
-	padding: 20px;
-	width: 60%;
+	margin:0px auto;
+	padding: 10px;
 	color: #000;
-	background-color: rgba(255,255,255,1);
 	text-align: center;
 	float: none;
-	border-radius: 5px;
 }
 #contact-container p{
 	font-size: 18px;
@@ -123,34 +124,37 @@ body{
 	color:#000;
 	text-shadow: none;
 }
-.h1-responsive{
-	padding-bottom: 50px;
-}
-
-@media screen and (max-width:760px){
-	body{
-		width: 100%;
-		font-size: 1em;
-		background: url("../img/red-brickwall760.jpg");
+@media screen and (max-width:400px){
+	#nav a{
+		  font-size: 12px;
 	}
-	#bio-container{
-		width: 100%;
+	#bio{
+		float: left;
+		clear: left;
+		display: block;
 	}
-	#bio-header{
-		padding: 0;
-		margin: 0;
-		text-shadow: 2px #000;
+	#name{
+		font-size: 25px;
 	}
 	#section-2{
-	padding: 0 20px;
-	}
-	.thumbnail{
-		width: 50%;
-	}
-	#thumbnail-1, #thumbnail-2, #thumbnail-3{
-		display: block;
-		float: none;
-		clear: both;
-		margin: 20px auto;
+		height: 100%;
 	}
 }
+@media screen and (max-width:760px){
+	#nav{
+		background-color: white;
+	}
+	#bio{
+		float: left;
+		clear: left;
+		display: block;
+	}
+	#section-1{
+		display: block;
+	}
+	#projects a{
+		margin: 15px auto;
+	}
+
+}
+
