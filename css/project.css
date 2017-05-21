@@ -8,14 +8,25 @@
 	padding: none;
 	margin: none;
 }
-body{
+body, html{
 	background: url("../img/Brick-Wall-Background.jpg");
+	margin: 0;
+	padding: 0;
 }
 #nav{
-	background-color: rgba(255,255,255,.9);
-	width: 100%;
-	position: relative;
-	padding: 10px;
+	background-color: /*#321011*/ rgba(255,255,255,1);
+	padding: 10px 0px 0px 0px;
+	border:1px solid white;
+}
+#nav a{
+	margin: 0 5px;
+	color:#000;
+	font-size: 14px;
+	font-weight: bold;
+}
+#nav a:hover{
+	opacity: 0.7;
+	color:#f00;
 }
 #project{
 	background-color: rgba(255,255,255,.9);
@@ -23,36 +34,45 @@ body{
 	margin: 10%;
 	padding: 10px;
 	overflow: auto;
+	border-radius: 5px;
+	text-align: center
+}
+#project-header{
+	font-size: 18px;
+	background-color: /*#321011*/ rgba(255,255,255,1);
+
+}
+.project-synopsis{
+	width: 60%;
+	margin: 20px auto;
+	text-align: center;
 }
 .thumbnail
 		{
-			width: 30%;
+			width: 25%;
 			background-color: rgba(255,255,255,.9);
-			float: left;
-			border-radius: 5px;
+/*			float: left;
+*/			border-radius: 5px;
 		    cursor: pointer;
 		    transition: 0.3s;
+		    display: inline;
+		    vertical-align: top;
+		    margin-right:10px;
+		    margin-left: 10px; 
 		}
 		.thumbnail:hover {
 			opacity: 0.7;
 		}
-		#img-1, #img-4, #img-7
-		{
-			margin: 0px 4% 0px 0px;
-		}
 		#img-2, #img-5, #img-8
 		{
-			margin: 0px 1% 0px 1%;
-			float: left;
 			text-align: center;
 			font-family: times;
 			font-size: 3em;
 		}
 		#img-3, #img-6, #img-9
 		{
-			margin: 0px 0px 0px 4%;
-			float: right;
-		}
+/*			margin: 0px 0px 0px 4%;
+*/		}
 		.modal {
 		    display: none; /* Hidden by default */
 		    position: fixed; /* Stay in place */
@@ -64,7 +84,7 @@ body{
 		    height: 100%; /* Full height */
 		    overflow: auto; /* Enable scroll if needed */
 		    background-color: rgb(0,0,0); /* Fallback color */
-		    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+		    background-color: rgba(0,0,0,.5); /* Black w/ opacity */
 		}
 		.modal-content {
 		    margin: 0 auto;
@@ -86,9 +106,9 @@ body{
 		}
 		.modal-content, #caption { 
 		    -webkit-animation-name: zoom;
-		    -webkit-animation-duration: 0.6s;
+		    -webkit-animation-duration: 1s;
 		    animation-name: zoom;
-		    animation-duration: 0.6s;
+		    animation-duration: 1s;
 		}
 
 @-webkit-keyframes zoom {
@@ -106,22 +126,29 @@ body{
 		    position: absolute;
 		    top: 15px;
 		    right: 35px;
-		    color: #f1f1f1;
+		    color: #fff;
 		    font-size: 40px;
 		    font-weight: bold;
 		    transition: 0.3s;
+		    opacity: 1;
 		}
 
 		.close:hover,
 		.close:focus {
-		    color: #fff;
+		    color: #f00;
+		    opacity: 1;
 		    text-decoration: none;
 		    cursor: pointer;
 		}
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 768px){
     .modal-content {
         width: 100%;
+    }
+    .thumbnail{
+    	width: 40%;
+    	display: block;
+    	margin: 10px auto;
     }
 }
