@@ -130,6 +130,19 @@ $('#img-9').click(function(){
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
 });
+
+var modal = $('#myModal10');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+     img = $('img-10');
+     modalImg = $("Healthcasts_GIF.gif");
+     captionText = $("caption");
+
+$('#img-10').click(function(){
+    $('#myModal10').css("display", "block");
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+});
 // Get the <span> element that closes the modal
 var span = $(".close");
 
