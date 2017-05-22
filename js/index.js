@@ -12,6 +12,7 @@ $(window).scroll(function() {
   }
 });
 
+	
 
 // Get the modal
 var modal = $('#myModal1');
