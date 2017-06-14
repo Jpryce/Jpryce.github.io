@@ -12,7 +12,6 @@ $(window).scroll(function() {
   }
 });
 
-	
 
 // Get the modal
 var modal = $('#myModal1');
@@ -144,11 +143,24 @@ $('#img-10').click(function(){
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
 });
+
+var modal = $('#mymodal11');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+     img = $('img-11');
+     modalImg = $("Healthcasts_GIF.gif");
+     captionText = $("caption");
+
+$('#img-11').click(function(){
+    $('#myModal11').css("display", "block");
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+});
 // Get the <span> element that closes the modal
-var span = $(".close");
+var span = $(".closebutton");
 
 // When the user clicks on <span> (x), close the modal
-$('.close').click(function() { 
+$('.closebutton').click(function() { 
   $('.modal').css("display", "none");
 })
 
