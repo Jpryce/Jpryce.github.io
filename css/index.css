@@ -48,10 +48,10 @@ body, html{
 }
 #bio{
 	border-radius: 5px;
-	padding: 10px;
+	padding: 20px 10px;
 	display: table-cell;
 	float: none;
-	vertical-align: top;
+	vertical-align: middle;
 }
 #bio li{
 	background-color: rgba(255,255,255,0) !important;
