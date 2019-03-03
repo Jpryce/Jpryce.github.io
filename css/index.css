@@ -76,6 +76,7 @@ body, html{
 }
 #profilepic img{
 	width: 600px;
+	padding: 20px 0px;
 }
 #projects img{
 	transition: box-shadow 1s, transform 1s;
